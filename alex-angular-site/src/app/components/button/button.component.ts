@@ -12,6 +12,14 @@ export class ButtonComponent {
   @Input() buttonText: string = '';
   @Input() icon: string | null = null;
   @Input() type: string = 'button';
+  @Input() onClick: Function = () => {};
 
   constructor() {}
+
+  handleClick() {
+    if (this.onClick) {
+      console.log("Button clicked.");
+      this.onClick();
+    }
+  }
 }

@@ -1,4 +1,9 @@
 main {
     height: 100%;
     background-color: #C4DFE6;
+
+    section {
+        display: flex;
+        justify-content: center;
+    }
 }

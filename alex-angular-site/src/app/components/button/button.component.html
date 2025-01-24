@@ -1,4 +1,4 @@
-<button [type]="type">
+<button [type]="type" (click)="handleClick()">
     <ng-container *ngIf="icon">
         <i class="material-icons" *ngIf="icon">{{ icon }}</i>
     </ng-container>
