@@ -1,5 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
 *, html, body {
     margin: 0;
     height: 100%;
+}
+
+.app-normal-text {
+    color: #b9bbbd;
+}
+
+app-home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+app-about-me {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+app-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

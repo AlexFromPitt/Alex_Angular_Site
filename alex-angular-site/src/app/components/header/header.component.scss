@@ -1,14 +1,28 @@
 div {
     height: 50px;
-    background-color: #66A5AD;
+    background-color: #13171a;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 0;
+    padding: 0 1rem;
 
-    app-button {
-        height: 100%;
-        width: 200px;
+    .full-name-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
         min-width: fit-content;
+        white-space: nowrap;
+    }
+
+    .button-container {
+        display: flex;
+        gap: 0.5rem;
+
+        app-button {
+            height: 100%;
+            width: 200px;
+            min-width: fit-content;
+        }
     }
 }

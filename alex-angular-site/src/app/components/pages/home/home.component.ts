@@ -8,11 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  title: string = '';
+  homeHeading: string = "Hi, I\'m Alex Mitro"
+  homeDescription: string = "I'm a Software Engineer from the Pittsburgh area with experience as a Full Stack Developer, and Embedded Software Engineer."
+  imagePath = 'assets/portrait_1.png';
 
   constructor() {}
-
-  ngOnInit() {
-    this.title = 'Home';
-  }
 }

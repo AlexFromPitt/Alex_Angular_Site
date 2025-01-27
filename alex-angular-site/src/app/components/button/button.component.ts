@@ -18,7 +18,6 @@ export class ButtonComponent {
 
   handleClick() {
     if (this.onClick) {
-      console.log("Button clicked.");
       this.onClick();
     }
   }
