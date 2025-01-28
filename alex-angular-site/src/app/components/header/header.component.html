@@ -2,8 +2,8 @@
     <span class="app-normal-text full-name-text">Alex Mitro</span>
     <div class="button-container">
         <app-button *ngFor="let button of headerButtons"
-            [buttonText]="button.buttonText"
-            [onClick]="redirectTo.bind(this, button.path)">
+                    [buttonText]="button.buttonText"
+                    [onClick]="scrollTo.bind(this, button.sectionId)">
         </app-button>
     </div>
 </div>

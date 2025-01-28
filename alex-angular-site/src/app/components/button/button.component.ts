@@ -13,6 +13,7 @@ export class ButtonComponent {
   @Input() icon: string | null = null;
   @Input() type: string = 'button';
   @Input() onClick: Function = () => {};
+  @Input() sectionId: string = '';
 
   constructor() {}
 

@@ -12,14 +12,17 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   headerButtons = [
-    { buttonText: 'Home', icon: null, type: 'button', path: '/home' },
-    { buttonText: 'About Me', icon: null, type: 'button', path: '/about-me' },
-    { buttonText: 'Contact', icon: null, type: 'button', path: '/contact' }
+    { buttonText: 'Home', icon: null, type: 'button', sectionId: 'home' },
+    { buttonText: 'About Me', icon: null, type: 'button', sectionId: 'about-me' },
+    { buttonText: 'Contact', icon: null, type: 'button', sectionId: 'contact' }
   ]
 
   constructor(private router: Router) {}
 
-  redirectTo(redirectUrl: string) {
-    this.router.navigate([redirectUrl])
+  scrollTo(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }
