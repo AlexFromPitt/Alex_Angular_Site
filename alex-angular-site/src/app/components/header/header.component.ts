@@ -1,7 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from "../button/button.component";
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -17,12 +16,15 @@ export class HeaderComponent {
     { buttonText: 'Contact', icon: null, type: 'button', sectionId: 'contact' }
   ]
 
-  constructor(private router: Router) {}
+  constructor() {}
 
   scrollTo(sectionId: string) {
     const element = document.getElementById(sectionId);
+
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      console.error("Element not found:", sectionId);
     }
   }
 }
